@@ -19,12 +19,13 @@ const props = withDefaults(defineProps<IProps>(), {
 
 <style module lang="scss">
 .button {
-  position: relative;
-  display: inline-flex;
+  position: sticky;
+  display: flex;
   gap: 8px;
   align-items: center;
   justify-content: center;
-  height: 40px;
+  width: 120px;
+  height: 60px;
   padding: 16px 32px;
   font-size: 1rem;
   line-height: 1.5;
@@ -34,7 +35,7 @@ const props = withDefaults(defineProps<IProps>(), {
 
   &[data-layout='secondary'] {
     color: var(--color-primary);
-    background-color: var(--color-transparent);
+    background-color: var(--color-secondary);
     border-color: var(--color-primary);
   }
 }
